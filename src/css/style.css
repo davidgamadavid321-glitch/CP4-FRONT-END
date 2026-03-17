@@ -119,11 +119,19 @@ body {
     height: 200px;
   }
 }
+.navbar {
+  height: 70px;
+  padding: 0 20px;
+}
 
+.navbar-brand img {
+  height: 200px; /* tamanho ideal */
+  width: auto;
+}
 .carousel-item {
     height: 500px;
     padding: 30px 120px;
-    background-color: rgb(26, 135, 84);
+    background-color: rgb(233, 247, 239);
 }
 
 .carousel-item h2{
