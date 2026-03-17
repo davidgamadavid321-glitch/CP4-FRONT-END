@@ -7,3 +7,9 @@
 .page-header {
   background-color: #e9f7ef;
 }
+
+.filter-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
