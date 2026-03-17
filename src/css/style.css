@@ -13,3 +13,24 @@
   border-radius: 12px;
   padding: 24px;
 }
+
+.product-card .price {
+  color: #198754;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #d1e7dd;
+}
