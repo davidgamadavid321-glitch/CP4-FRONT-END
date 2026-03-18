@@ -52,6 +52,15 @@
   z-index: 2002;
 }
 
+.carousel-caption {
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    bottom: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+}
 .navbar-collapse {
   z-index: 2001;
 }
