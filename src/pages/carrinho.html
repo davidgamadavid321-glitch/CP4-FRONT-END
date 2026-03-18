@@ -60,62 +60,218 @@
 
   </div>
 </nav>
-    <!-- FOOTER -->
+<!-- CONTEÚDO PRINCIPAL -->
+<header class="cart-header py-5 text-center">
+  <div class="container">
+    <h1 class="fw-bold mb-2">Seu Carrinho</h1>
+    <p class="text-muted mb-0">Revise seus produtos e finalize sua compra sustentável</p>
+  </div>
+</header>
 
-    <footer class="footer mt-5 pt-5 pb-4">
-    <div class="container">
-        <div class="row">
+<main class="container mb-5">
+  <div class="row g-4">
 
-        <!-- COLUNA 1 -->
-        <div class="col-md-3">
-            <h6>MINHA CONTA</h6>
-            <ul class="list-unstyled">
-            <li><a href="#">Compras</a></li>
-            <li><a href="#">Configurações da conta</a></li>
-            <li><a href="#">Trocar a senha</a></li>
-            </ul>
-        </div>
+    <!-- LISTA DE PRODUTOS -->
+    <section class="col-lg-8">
+      <div class="cart-box shadow-sm">
 
-        <!-- COLUNA 2 -->
-        <div class="col-md-3">
-            <h6>SOBRE</h6>
-            <ul class="list-unstyled">
-            <li><a href="#">Sobre nos</a></li>
-            <li><a href="#">Carreira</a></li>
-            <li><a href="#">Comunidade UMKTO</a></li>
-            <li><a href="#">Comentários</a></li>
-            </ul>
-        </div>
+        <!-- ITEM 1 -->
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="../../img/Creme.png" alt="Creme">
+          </div>
 
-        <!-- COLUNA 3 -->
-        <div class="col-md-3">
-            <h6>LANÇAMENTOS</h6>
-            <p>Receba novidades e ofertas especiais</p>
+          <div class="cart-item-info">
+            <h5 class="mb-1">Creme</h5>
+            <p class="text-muted mb-2">Fórmula cremosa e perfumada para cuidados diários.</p>
+            <span class="cart-item-price">R$ 59,99</span>
+          </div>
 
-            <input type="email" class="form-control mb-2" placeholder="Seu email">
-
-            <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label">
-                Aceito os termos
-            </label>
+          <div class="cart-item-actions">
+            <div class="quantity-box">
+              <button type="button">-</button>
+              <span>1</span>
+              <button type="button">+</button>
             </div>
-
-            <button class="btn btn-outline-dark w-100">Enviar</button>
+            <p class="subtotal mb-2">Subtotal: <strong>R$ 59,99</strong></p>
+            <button class="btn btn-outline-danger btn-sm">
+              <i class="bi bi-trash3"></i> Remover
+            </button>
+          </div>
         </div>
 
-        <!-- COLUNA 4 -->
-        <div class="col-md-3">
-            <h6>SEGUIR</h6>
-            <div class="social-icons d-flex gap-3 mt-3">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-instagram"></i>
+        <!-- ITEM 2 -->
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="../../img/camisa.png" alt="Camisa Branca">
+          </div>
+
+          <div class="cart-item-info">
+            <h5 class="mb-1">Camisa Branca</h5>
+            <p class="text-muted mb-2">Peça confortável e versátil para o dia a dia.</p>
+            <span class="cart-item-price">R$ 39,99</span>
+          </div>
+
+          <div class="cart-item-actions">
+            <div class="quantity-box">
+              <button type="button">-</button>
+              <span>2</span>
+              <button type="button">+</button>
             </div>
+            <p class="subtotal mb-2">Subtotal: <strong>R$ 79,98</strong></p>
+            <button class="btn btn-outline-danger btn-sm">
+              <i class="bi bi-trash3"></i> Remover
+            </button>
+          </div>
         </div>
 
+        <!-- ITEM 3 -->
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="../../img/garrafa2.png" alt="Garrafa EcoCommerce">
+          </div>
+
+          <div class="cart-item-info">
+            <h5 class="mb-1">Garrafa EcoCommerce</h5>
+            <p class="text-muted mb-2">Ideal para reduzir o uso de plástico no dia a dia.</p>
+            <span class="cart-item-price">R$ 59,99</span>
+          </div>
+
+          <div class="cart-item-actions">
+            <div class="quantity-box">
+              <button type="button">-</button>
+              <span>1</span>
+              <button type="button">+</button>
+            </div>
+            <p class="subtotal mb-2">Subtotal: <strong>R$ 59,99</strong></p>
+            <button class="btn btn-outline-danger btn-sm">
+              <i class="bi bi-trash3"></i> Remover
+            </button>
+          </div>
         </div>
-    </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
-</body>
+
+        <!-- ITEM 4 -->
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="../../img/umidificador.png" alt="Umidificador">
+          </div>
+
+          <div class="cart-item-info">
+            <h5 class="mb-1">Umidificador</h5>
+            <p class="text-muted mb-2">Melhora o conforto do ambiente e a qualidade de vida.</p>
+            <span class="cart-item-price">R$ 39,99</span>
+          </div>
+
+          <div class="cart-item-actions">
+            <div class="quantity-box">
+              <button type="button">-</button>
+              <span>1</span>
+              <button type="button">+</button>
+            </div>
+            <p class="subtotal mb-2">Subtotal: <strong>R$ 39,99</strong></p>
+            <button class="btn btn-outline-danger btn-sm">
+              <i class="bi bi-trash3"></i> Remover
+            </button>
+          </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="../../img/luminaria2.png" alt="Luminária Ecológica">
+          </div>
+
+          <div class="cart-item-info">
+            <h5 class="mb-1">Luminária Ecológica</h5>
+            <p class="text-muted mb-2">Design moderno com foco em economia de energia.</p>
+            <span class="cart-item-price">R$ 119,90</span>
+          </div>
+
+          <div class="cart-item-actions">
+            <div class="quantity-box">
+              <button type="button">-</button>
+              <span>1</span>
+              <button type="button">+</button>
+            </div>
+            <p class="subtotal mb-2">Subtotal: <strong>R$ 119,90</strong></p>
+            <button class="btn btn-outline-danger btn-sm">
+              <i class="bi bi-trash3"></i> Remover
+            </button>
+          </div>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="cart-item border-0 pb-0">
+          <div class="cart-item-image">
+            <img src="../../img/camisaazul.png" alt="Camisa Azul">
+          </div>
+
+          <div class="cart-item-info">
+            <h5 class="mb-1">Camisa Azul</h5>
+            <p class="text-muted mb-2">Estilo e conforto com proposta sustentável.</p>
+            <span class="cart-item-price">R$ 119,90</span>
+          </div>
+
+          <div class="cart-item-actions">
+            <div class="quantity-box">
+              <button type="button">-</button>
+              <span>1</span>
+              <button type="button">+</button>
+            </div>
+            <p class="subtotal mb-2">Subtotal: <strong>R$ 119,90</strong></p>
+            <button class="btn btn-outline-danger btn-sm">
+              <i class="bi bi-trash3"></i> Remover
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESUMO -->
+    <aside class="col-lg-4">
+      <div class="summary-box shadow-sm">
+        <h4 class="fw-bold mb-4">Resumo do Pedido</h4>
+
+        <div class="summary-line">
+          <span>Produtos</span>
+          <span>R$ 479,75</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Frete</span>
+          <span>R$ 21,90</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Desconto</span>
+          <span class="text-success">- R$ 20,00</span>
+        </div>
+
+        <hr>
+
+        <div class="summary-line total-line">
+          <span>Total</span>
+          <span>R$ 481,65</span>
+        </div>
+
+        <div class="mt-4">
+          <label for="cupom" class="form-label fw-semibold">Cupom de desconto</label>
+          <div class="input-group">
+            <input type="text" id="cupom" class="form-control" placeholder="Digite seu cupom">
+            <button class="btn btn-outline-success" type="button">Aplicar</button>
+          </div>
+        </div>
+
+        <button class="btn btn-success w-100 mt-4 py-2">
+          <i class="bi bi-credit-card me-2"></i>Finalizar Compra
+        </button>
+
+        <a href="./produtos.html" class="btn btn-outline-dark w-100 mt-2 py-2">
+          Continuar Comprando
+        </a>
+      </div>
+    </aside>
+
+  </div>
+</main>
