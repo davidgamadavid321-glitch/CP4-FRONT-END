@@ -3,42 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contatos</title>
+  <title>EcoCommerce</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-success py-4 navbar-dark">
-    <div class="container-fluid ps-5 pe-4">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid px-3">
 
-        <a class="navbar-brand" href="../../../index.html">
-            <img src="../../../img/Logo-removebg-preview.png" 
-                 alt="logo" 
-                 width="50" 
-                 class="d-inline-block align-text-top">
-        </a>
+    <a class="navbar-brand m-0 p-0" href="/index.html">
+      <svg class="logo-svg" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="leafGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#52B788"/>
+            <stop offset="100%" stop-color="#2D6A4F"/>
+          </linearGradient>
+        </defs>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <rect width="400" height="120" rx="20" fill="transparent"/>
 
-        <div class="collapse navbar-collapse justify-content-end" id="menu">
-            <div class="navbarhamburguer">
-                <ul class="navbar-nav me-3">
-                    <li class="nav-item"><a class="nav-link" href="../../../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../produtos.html">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../produtos.html">Categorias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../contatos.html">Contatos</a></li>
-                </ul>
-            </div>
-            <a href="#" class="btn btn-outline-light">
-                <i class="bi bi-cart3"></i>
-            </a>
-        </div>
+        <!-- Ícone -->
+        <g transform="translate(24,20)">
+          <ellipse cx="34" cy="40" rx="24" ry="34" transform="rotate(35 34 40)" fill="url(#leafGradient)"/>
+          <path d="M18 56C32 42 47 29 67 21" stroke="#1B4332" stroke-width="4" stroke-linecap="round"/>
+          <path d="M40 46C39 36 44 27 54 20" stroke="#D8F3DC" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="16" cy="58" r="6" fill="#95D5B2"/>
+        </g>
+
+        <!-- Texto -->
+        <text x="105" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1B4332">
+          Eco<tspan fill="#2D6A4F">Commerce</tspan>
+        </text>
+        <text x="106" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#52796F" letter-spacing="1.2">
+          sustentável • moderno • natural
+        </text>
+      </svg>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-3 text-center">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/pages/produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/pages/contatos.html">Contatos</a></li>
+        <li class="nav-item mt-2 mt-lg-0">
+          <a class="btn btn-success" href="/src/pages/carrinho.html">
+            <i class="bi bi-cart-fill"></i> Carrinho
+          </a>
+        </li>
+      </ul>
     </div>
-</nav>
 
+  </div>
+</nav>
     <div class="container mt-4">
         <div class="row">
             <div class="col-12 text-center">
@@ -109,6 +132,63 @@
             </div>
         </div>
     </div>
+  <!-- FOOTER -->
+
+<footer class="footer mt-5 pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- COLUNA 1 -->
+      <div class="col-md-3">
+        <h6>MINHA CONTA</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Compras</a></li>
+          <li><a href="#">Configurações da conta</a></li>
+          <li><a href="#">Trocar a senha</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUNA 2 -->
+      <div class="col-md-3">
+        <h6>SOBRE</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Sobre nos</a></li>
+          <li><a href="#">Carreira</a></li>
+          <li><a href="#">Comunidade UMKTO</a></li>
+          <li><a href="#">Comentários</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUNA 3 -->
+      <div class="col-md-3">
+        <h6>LANÇAMENTOS</h6>
+        <p>Receba novidades e ofertas especiais</p>
+
+        <input type="email" class="form-control mb-2" placeholder="Seu email">
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label">
+            Aceito os termos
+          </label>
+        </div>
+
+        <button class="btn btn-outline-dark w-100">Enviar</button>
+      </div>
+
+      <!-- COLUNA 4 -->
+      <div class="col-md-3">
+        <h6>SEGUIR</h6>
+        <div class="social-icons d-flex gap-3 mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
       <!-- FOOTER -->
